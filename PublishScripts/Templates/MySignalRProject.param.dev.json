@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "mysignalrproject"
+  },
+  "hostingPlanName": {
+    "value": "mysignalrproject"
+  },
+  "siteLocation": {
+    "value": "East US"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "f0a2356f-723c-4386-8e46-d5633c7037fe"
+  },
+  "resourceGroup": {
+    "value": "myResourceGroup"
+  }
+}
