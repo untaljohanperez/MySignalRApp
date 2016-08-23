@@ -26,6 +26,13 @@ namespace MySignalRProject
                       "~/Scripts/jquery-1.10.2.min.js"
                       ));
 
+            bundles.Add(new ScriptBundle("~/bundles/angularApp").Include(
+                      "~/Scripts/angular.js",
+                      "~/Scripts/App/app.js",
+                      "~/Scripts/App/Controllers/dashboardController.js",
+                      "~/Scripts/App/Services/backendHubProxy.js"
+                      ));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));

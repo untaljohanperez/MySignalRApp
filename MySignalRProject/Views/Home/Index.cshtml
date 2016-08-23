@@ -1,13 +1,57 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-@section scripts {
+<div class="wrapper">
+    <div class="container" ng-controller="DashboardController">
+        {{foo}}
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-primary">Real Time DashBoard Dashboard</h1>
+            </div>
+        </div>
+        <div class="well">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <input type="text" id="message" value="" />
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="btn btn-success">Send</button>
+                </div>
+            </div>
+        </div>
 
+        <div class="well">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Messages</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@section scripts {
     <script src="~/signalr/js"></script>
-    <script>
+    <!--<script>
         $(document).ready(function () {
             var connection = $.connection.hub;
-            var hub = null;
             connection.start()
                 .fail(function () { console.log("no"); })
                 .done(function () {
@@ -22,5 +66,5 @@
 
         });
         //Ctrl + k, d
-    </script>
+    </script>-->
 }
